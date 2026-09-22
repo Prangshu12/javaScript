@@ -74,3 +74,43 @@ function checkTemperature(temperature){
     return jsx;
 }
 console.log(checkTemperature(22))
+
+// ### 3. Mini Menu System
+// (DATE - 17/09/2026)
+// Write a function:
+// ```jsx
+// menuChoice(choice)
+// ```
+// Use `switch` to return:
+// - `1` → `"Start Game"`
+// - `2` → `"Load Game"`
+// - `3` → `"Settings"`
+// - `4` → `"Exit"`
+// - anything else → `"Invalid Choice"`
+// Requirements:
+// - Use `switch`
+// - Use `case`
+// - Use `break`
+// - Use `default`
+// - Return the result instead of printing it
+// ---
+
+function menuChoice(choice){
+    switch(choice){
+        case (1):
+            return "Start Game";
+            break;
+        case (2):
+            return "Load Game";
+            break;
+        case (3):
+            return "Settings";
+            break;
+        case (4):
+            return "Exit"
+            break;
+        default:
+            return "Invalid Choise"
+    }
+}
+console.log(menuChoice(4))
