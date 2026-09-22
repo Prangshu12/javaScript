@@ -19,8 +19,6 @@
 // - City
 // - Semester
 // - Favourite subject
-
-
 const Student_name = "Prangshu Pranjal Saikia";
 let age = 18;
 let course = "BTech Cse"
@@ -32,7 +30,6 @@ Marks = 80.5 + "%";
 let City = "Golaghat";
 let Semester = 1 + "st";
 let Favourite_subject = "coding";
-
 console.log("Student name: " + Student_name);
 console.log("Student age: " + age);
 console.log("Student course: " + course);
@@ -42,3 +39,38 @@ console.log("Birth year: " + Birth_year);
 console.log("City: " + City);
 console.log("Semester: " + Semester);
 console.log("Student's subject preference: " + Favourite_subject);
+
+
+
+
+
+// ### Temperature Checker
+// (DATE - 17/09/2026)
+// Create a function:
+// ```jsx
+// checkTemperature(temperature)
+// ``
+// The function should return:
+// - `"Cold"` if temperature is below 20
+// - `"Normal"` if temperature is between 20 and 30
+// - `"Hot"` if temperature is above 30
+// ### Extra Challenge
+// Create a variable **inside the function**:
+// ```jsx
+// let message = " " ;
+// ```
+// Use that variable to store the result before returning it.
+function checkTemperature(temperature){
+    jsx = "";
+        if(temperature<20){
+            jsx = "Cold"
+        }
+        else if (temperature>20 && temperature < 30){
+            jsx = "Normal"
+        }
+        else{
+            jsx = "Hot"
+        }
+    return jsx;
+}
+console.log(checkTemperature(22))
