@@ -61,7 +61,7 @@ console.log("Student's subject preference: " + Favourite_subject);
 // ```
 // Use that variable to store the result before returning it.
 function checkTemperature(temperature){
-    jsx = "";
+   let jsx = "";
         if(temperature<20){
             jsx = "Cold"
         }
@@ -114,3 +114,42 @@ function menuChoice(choice){
     }
 }
 console.log(menuChoice(4))
+
+
+// ### 4. Number Search with `break` and `continue`
+// (DATE - 17/09/2026)
+// Write:
+// ```
+// findNumber(numbers,target)
+// ```
+// Search through the array and:
+// - Skip negative numbers using `continue`
+// - Stop immediately when `target` is found using `break`
+// - Return `"Found"` if found
+// - Return `"Not Found"` otherwise
+// Example:
+// ```
+// findNumber([-5,10,-2,7,20],7)
+// ```
+// should return:
+// ```
+// "Found"
+// ```
+
+function findNumber(numbers, target) {
+    for (let i = 0; i < numbers.length; i++) {
+
+        if (numbers[i] < 0) {
+            continue;
+        }
+
+        if (numbers[i] == target) {
+            console.log("Found at index" ,i);
+            return "Found";
+        }
+    }
+
+    return "Not Found";
+}
+
+console.log(findNumber([-5, 10, -2, 7, 20], 7));
