@@ -80,3 +80,4 @@ switch(day){
         return "invalid numbers"
 }
 }
+console.log(getDayName(2));
