@@ -184,17 +184,17 @@
 // "Password Correct"
 // ```
 
-function checkPassword(passwords) {
-    let i = 0;
+// function checkPassword(passwords) {
+//     let i = 0;
 
-    do {
-        if (passwords[i] === "1234") {
-            return "Password Correct";
-        }
+//     do {
+//         if (passwords[i] === "1234") {
+//             return "Password Correct";
+//         }
 
-        i++;
-    } while (i < passwords.length);
+//         i++;
+//     } while (i < passwords.length);
 
-    return "Password Failed";
-}
-console.log(checkPassword(["134", "1313","2341"]));
+//     return "Password Failed";
+// }
+// console.log(checkPassword(["134", "1313","2341"]));
