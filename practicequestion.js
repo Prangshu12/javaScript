@@ -136,26 +136,65 @@
 // // "Found"
 // // ```
 
-function findNumber(numbers, target) {
-    // let n = "";
-    for (let i = 0; i < numbers.length; i++) {
+// function findNumber(numbers, target) {
+//     // let n = "";
+//     for (let i = 0; i < numbers.length; i++) {
 
-        if (numbers[i] < 0) {
-            continue;
+//         if (numbers[i] < 0) {
+//             continue;
+//         }
+
+//         if (numbers[i] == target) {
+//             // n = "found";
+//             // return n;
+//             return "found";
+//             // break;
+//         }
+//         // if(n == "found"){
+//         //     return "found1";
+//         // }
+//     }
+
+//     return "Not Found";
+// }
+// console.log(findNumber([-5, 10, -2, 7, 20], 7));
+
+
+// ### 5. Password Checker Using `do...while`
+// (DATE - 17/09/2026)
+// Write a function:
+// ```
+// checkPassword(passwords)
+// ```
+// where `passwords` is an array containing attempted passwords.
+// The correct password is:
+// ```
+// "1234"
+// ```
+// Check the attempts one by one using a `do...while` loop.
+// Return:
+// - `"Password Correct"` when `"1234"` is found
+// - `"Password Failed"` if all attempts are exhausted
+// Example:
+// ```
+// checkPassword(["1111","5678","1234"])
+// ```
+// should return:
+// ```
+// "Password Correct"
+// ```
+
+function checkPassword(passwords) {
+    let i = 0;
+
+    do {
+        if (passwords[i] === "1234") {
+            return "Password Correct";
         }
 
-        if (numbers[i] == target) {
-            // n = "found";
-            // return n;
-            return "found";
-            // break;
-        }
-        // if(n == "found"){
-        //     return "found1";
-        // }
-    }
+        i++;
+    } while (i < passwords.length);
 
-    return "Not Found";
+    return "Password Failed";
 }
-
-console.log(findNumber([-5, 10, -2, 7, 20], 7));
+console.log(checkPassword(["134", "1313","2341"]));
