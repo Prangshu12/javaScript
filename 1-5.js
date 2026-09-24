@@ -136,29 +136,28 @@
 // // "Found"
 // // ```
 
-function findNumber(numbers, target) {
-    let n = false;
-    for (let i = 0; i < numbers.length; i++) {
+// function findNumber(numbers, target) {
+//     // let n = "";
+//     for (let i = 0; i < numbers.length; i++) {
 
-        if (numbers[i] < 0) {
-            continue;
-        }
+//         if (numbers[i] < 0) {
+//             continue;
+//         }
 
-        if (numbers[i] === target) {
-            n = true;
-            break;
-        }
-    }
-        if(n){
-            return "found";
-        }
-        else{
-            return "not found"
-        }
-    }
+//         if (numbers[i] == target) {
+//             // n = "found";
+//             // return n;
+//             return "found";
+//             // break;
+//         }
+//         // if(n == "found"){
+//         //     return "found1";
+//         // }
+//     }
 
-
-console.log(findNumber([-5, 10, -2, 7, 20], 7));
+//     return "Not Found";
+// }
+// console.log(findNumber([-5, 10, -2, 7, 20], 7));
 
 
 // ### 5. Password Checker Using `do...while`
