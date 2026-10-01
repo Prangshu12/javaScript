@@ -60,24 +60,64 @@
 // "Thursday"
 // ```
 
-function getDayName(day){
-switch(day){
-    case 1: 
-        return "Monday";
-    case 2:
-        return "Tuesday";
-    case 3: 
-        return "Wednesday";
-    case 4:
-        return "Thursday";
-    case 5:
-        return "Friday";
-    case 6:
-        return "Saturday";
-    case 7:
-        return "Sunday";
-    default:
-        return "invalid numbers"
+// function getDayName(day){
+// switch(day){
+//     case 1: 
+//         return "Monday";
+//     case 2:
+//         return "Tuesday";
+//     case 3: 
+//         return "Wednesday";
+//     case 4:
+//         return "Thursday";
+//     case 5:
+//         return "Friday";
+//     case 6:
+//         return "Saturday";
+//     case 7:
+//         return "Sunday";
+//     default:
+//         return "invalid numbers"
+// }
+// }
+// console.log(getDayName(2));
+
+
+
+
+
+
+// ### 8. Entry Checker
+// (DATE - 17/09/2026)
+// Write a function:
+// ```
+// checkEntry(age,hasID)
+// ```
+// The function should return:
+// - `"Allowed"` if age is 18 or above **and** the person has an ID
+// - `"ID Required"` if age is 18 or above but `hasID` is false
+// - `"Too Young"` if age is below 18
+// Requirements:
+// - Use a nested `if`
+// - Use `return`
+// Example:
+// ```
+// checkEntry(20,false)
+// ```
+// should return:
+// ```
+// "ID Required"
+// ```
+
+function checkEntry(age,hasID){
+    if(age>= 18){
+         if(hasID == false){
+            return "Id required";
+    }
+    return "Allowed"
+    }
+    else{
+        return "Too young";
+    }
 }
-}
-console.log(getDayName(2));
+console.log(checkEntry(12,false));
